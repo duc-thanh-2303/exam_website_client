@@ -31,7 +31,7 @@ const Navigation = () => {
         borderRadius: '0.8vw'
     }}>
         <div class="head">
-            <Link to="/dashboard" className='head-logo'>
+            <Link to="https://exam-website-client.vercel.app/dashboard" className='head-logo'>
                 <img src={logo} alt="logo"/>
             </Link>
 
@@ -41,7 +41,7 @@ const Navigation = () => {
                         textDecoration: 'none',
                         color: 'white',
                         fontSize: '1.2vw',
-                    }} to="/dashboard/project">Project</Link>
+                    }} to="https://exam-website-client.vercel.app/dashboard/project">Project</Link>
                 </li>
                 <li>
                     <Link style={{
@@ -55,7 +55,7 @@ const Navigation = () => {
                         textDecoration: 'none',
                         color: 'white',
                         fontSize: '1.2vw',
-                    }} to="/dashboard/report">Report</Link>
+                    }} to="https://exam-website-client.vercel.app/dashboard/report">Report</Link>
                 </li>
             </ul>
         </div>
