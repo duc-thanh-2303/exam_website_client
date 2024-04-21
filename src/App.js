@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/home/overview/:projectId" Component={Details} />
         <Route path="/reset-password" Component={Forgot}/>
         <Route path="/home/support" Component={Support}/>
-        <Route path="/dashboard" Component={Dashboard}/>
+        <Route path="https://exam-website-server-api.vercel.app/dashboard" Component={Dashboard}/>
         <Route path="/dashboard/account" Component={Account}/>
         <Route path="/dashboard/add-account" Component={AddAccount}/>
         <Route path="/dashboard/project" Component={Project}/>
