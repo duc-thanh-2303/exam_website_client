@@ -21,10 +21,10 @@ function LoginForm({ setLoggedIn }) {
       const decodedToken = jwtDecode(token);
       if (decodedToken.role === 'admin') {
         // Chuyển hướng đến trang dashboard nếu là admin
-        window.location.href = '/dashboard';
+        window.location.href = 'https://exam-website-client.vercel.app/dashboard';
       } else {
         // Chuyển hướng đến trang home nếu là user
-        window.location.href = '/option';
+        window.location.href = 'https://exam-website-client.vercel.app//option';
       }
     } catch (error) {
       console.error('Login failed:', error);
