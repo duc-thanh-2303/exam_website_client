@@ -13,7 +13,7 @@ function LoginForm({ setLoggedIn }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/login', { username, password });
+      const response = await axios.post("/login", { username, password });
       const token = response.data;
       // Lưu token vào localStorage hoặc sessionStorage
       localStorage.setItem('token', token);
