@@ -1,0 +1,12 @@
+.btn__project > button  {
+    width: 11vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+    height: 8vh;
+    transition: all .5s;
+}
+
+.btn__project > button:hover {
+    background-color: black;
+    color: white;
+}

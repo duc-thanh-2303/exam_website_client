@@ -1,0 +1,15 @@
+.title {
+    position: fixed;
+    top: 10vh;
+    left: 12vw;
+    /* background-color: blue; */
+  }
+  
+  .title h1 {
+    font-size: 4vw;
+  }
+  
+  .title p {
+    width: 25vw;
+    font-size: 1vw;
+  }

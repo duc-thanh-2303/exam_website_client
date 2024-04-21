@@ -1,0 +1,38 @@
+.supportForm {
+    position: fixed;
+    top: 10vh;
+    right: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  
+  .supportForm > input {
+    width: 25vw;
+    height: 10vh;
+    font-size: 1vw;
+    /* padding-left: 20px; */
+    border: none;
+    border-bottom: solid 0.2vw black;
+    margin-bottom: 1vw;
+    margin-top: 1vh;
+  }
+  
+  .supportForm > input[type="submit"] {
+    width: 13vw;
+    height: 8vh;
+  }
+  
+  .supportForm > textarea {
+    border: none;
+    padding: 1.5vw;
+    width: 25vw;
+    height: 20vh;
+    font-size: 1vw;
+  }
+  
+  .supportForm > input:focus {
+    outline: none;
+    /* background-color: white; */
+  }

@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// import axios from 'axios'
+import './App.css'
+import Login from '../src/modules/auth/Login'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Home from '../src/modules/home/Home'
+import Account from '../src/modules/account/Account'
+import Dashboard from '../src/modules/dashboard/Dashboard'
+import Project from '../src/modules/project/Project'
+import Support from '../src/modules/support/Support'
+import Forgot from '../src/modules/forgot/Forgot'
+import Report from '../src/modules/report/Report'
+import AddAccount from '../src/modules/account/AddAccount'
+import UploadProject from '../src/modules/project/UploadProject'
+import Option from '../src/modules/option/Option'
+import Overview from '../src/modules/overview/Overview'
+import Details from './modules/details/Details'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route expact path='/' Component={Login}/>
+        <Route path="/home" Component={Home}/>
+        <Route path="/option" Component={Option}/>        
+        <Route path="/home/overview" Component={Overview}/>        
+        <Route path="/home/overview/:projectId" Component={Details} />
+        <Route path="/reset-password" Component={Forgot}/>
+        <Route path="/home/support" Component={Support}/>
+        <Route path="/dashboard" Component={Dashboard}/>
+        <Route path="/dashboard/account" Component={Account}/>
+        <Route path="/dashboard/add-account" Component={AddAccount}/>
+        <Route path="/dashboard/project" Component={Project}/>
+        <Route path="/dashboard/upload-project" Component={UploadProject}/>
+        <Route path="/dashboard/report" Component={Report}/>
+      </Routes>
+    </Router>
+  )
 }
 
-export default App;
+export default App

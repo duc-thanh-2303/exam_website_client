@@ -1,0 +1,146 @@
+.loginForm {
+    width: calc(100% - 50%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* background-color: red; */
+    width: calc(100% - 50%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2.7vw;
+    /* margin-left:vw; */
+    margin-bottom: -0.5vw;
+}
+
+p {
+    font-size: 0.8vw;
+    margin-left: -3.5vw;
+    margin-bottom: 1.5vw;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+form > .username,
+form > .password{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 0.7vw;
+    margin-bottom: 0.7vw;
+}
+
+
+form > .username > label,
+form > .password > label {
+    font-size: 1vw;
+    margin-bottom: 0.2vw;
+}
+
+form > .username > input,
+form > .password > input {
+    width: 20vw;
+    height: 6vh;
+    border-radius: 0.5vw;
+    border: solid 0.15vw rgba(0, 0, 0, 0.3);
+    padding: 1vw;
+    font-size: 0.8vw;
+    transition: all .5s;
+}
+
+form > .username > input:focus,
+form > .password > input:focus {
+    outline: none;
+    box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+form > a {
+    font-size: 0.8vw;
+    margin-top: 0.3vw;
+    margin-bottom: 1vw;
+    margin-right: -13vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+form > button {
+    width: 20vw;
+    height: 6vh;
+    border-radius: 0.5vw;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+form > button:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 431px){
+    .loginForm {
+        /* display: blac; */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: calc(100% - 60%);
+        height: calc(100% - 40%);
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    h2 {
+        font-size: 9vw;
+        margin-top: -7vh;
+    }
+
+    p {
+        font-size: 2.5vw;
+        margin-bottom: 1vh;
+    }
+
+    form > .username > label,
+    form > .password > label {
+        font-size: 4vw;
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
+
+    }
+
+    form > .username > input,
+    form > .password > input {
+        width: 60vw;
+        height: 4vh;
+        font-size: 3vw;
+        padding: 4vw;
+    }
+
+    form > a {
+        font-size: 3vw;
+        margin-right: -35vw;
+        margin-top: 1.5vh;
+        margin-bottom: 1.5vh;
+    }
+
+    form > button {
+        width: 60vw;
+        height: 4vh;
+    }
+}

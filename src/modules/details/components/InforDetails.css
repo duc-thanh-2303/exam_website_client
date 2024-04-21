@@ -1,0 +1,23 @@
+.infor__details {
+    width: 100%;
+    height: auto;
+}
+
+.infor__details > img {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.infor__details > .infor__details-title {
+    margin-top: 2vh;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    background-color: red;
+}
+
+.infor__details >  .infor__details-exam {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}

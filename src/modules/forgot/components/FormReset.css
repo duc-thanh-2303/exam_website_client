@@ -1,0 +1,48 @@
+.form-reset {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-reset > a {
+    text-decoration: none;
+    color: black;
+    margin-left: -24vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 10vw; */
+}
+
+.form-reset > form {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form > p {
+    margin-left: 0vw;
+}
+
+form > input {
+    width: 20vw;
+    height: 6vh;
+    border-radius: 0.5vw;
+    border: solid 0.15vw black;
+    padding: 1.2vw;
+    margin-bottom: 0.8vw;
+    transition: all .5s;
+}
+
+form > input:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.5);
+}

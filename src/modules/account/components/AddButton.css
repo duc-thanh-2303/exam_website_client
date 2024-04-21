@@ -1,0 +1,16 @@
+.add-btn {
+    font-size: 1.2vw;
+    padding: 2vh 2vw;
+    background-color: black;
+    color: white;
+    /* background-color: red; */
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.add-btn:hover {
+    color: black;
+    background-color: white;
+    border-radius: 0.8vw;
+    box-shadow: 0 0 0.8vw rgba(0, 0, 0, 0.5);
+}
