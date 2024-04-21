@@ -24,7 +24,7 @@ function LoginForm({ setLoggedIn }) {
         window.location.href = 'https://exam-website-client.vercel.app/dashboard';
       } else {
         // Chuyển hướng đến trang home nếu là user
-        window.location.href = 'https://exam-website-client.vercel.app//option';
+        window.location.href = 'https://exam-website-client.vercel.app/home';
       }
     } catch (error) {
       console.error('Login failed:', error);
