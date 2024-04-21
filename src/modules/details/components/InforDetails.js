@@ -10,7 +10,7 @@ const InforDetails = () => {
   useEffect(() => {
     const fetchProject = async () => {
       try {
-        const response = await axios.get(`/home/overview/${projectId}`); // Truyền _id vào endpoint
+        const response = await axios.get(`https://exam-website-server-api.vercel.app/home/overview/${projectId}`); // Truyền _id vào endpoint
         setProject(response.data);
       } catch (error) {
         console.error(error);
