@@ -10,7 +10,7 @@ const Buttonproject = () => {
         right: '0',
         left: '0'
     }}>
-        <Link className='btn__project' to={'/dashboard/upload-project'}>
+        <Link className='btn__project' to={'https://exam-website-client.vercel.app/dashboard/upload-project'}>
             <button>Add Project</button>
         </Link>
     </div>
