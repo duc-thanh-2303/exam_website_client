@@ -4,7 +4,7 @@ import './AddButton.css'
 const AddButton = () => {
   return (
     <div>
-        <Link className='add-btn' to='https://exam-website-server-api.vercel.app/dashboard/add-account'>
+        <Link className='add-btn' to='https://exam-website-client.vercel.app/dashboard/add-account'>
            Add account
         </Link>
     </div>
