@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "proxy": "https://exam-website-server-api.vercel.app/",
+  "proxy": "https://exam-website-server-api.vercel.app",
   "homepage": "http://designvietnam.online",
   "version": "0.1.0",
   "private": true,
