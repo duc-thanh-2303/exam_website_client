@@ -8,7 +8,8 @@ function LoginForm({ setLoggedIn }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  
+
+  axios.defaults.withCredentials = true;
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
