@@ -20,7 +20,7 @@ const FormDetails = ({ projectId }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        await axios.post(`/home/overview/${projectId}`, formData);
+        await axios.post(`https://exam-website-server-api.vercel.app/home/overview/${projectId}`, formData);
         alert('Feedback submitted successfully');
     } catch (error) {
         console.error('Error submitting feedback:', error);
