@@ -7,7 +7,7 @@ import axios from 'axios'
 const Navbar = () => {
   const handleLogout = async () => {
     try {
-      await axios.post('/logout'); // Gửi yêu cầu logout tới backend
+      await axios.post('https://exam-website-server-api.vercel.app/logout'); // Gửi yêu cầu logout tới backend
       // Chuyển hướng người dùng đến trang đăng nhập
       window.location.href = '/'; // Đổi đường dẫn này nếu đường dẫn của trang login khác
     } catch (error) {
