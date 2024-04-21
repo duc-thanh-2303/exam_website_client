@@ -10,7 +10,7 @@ const CardOverview = () => {
   useEffect(() => {
     async function fetchProjects() {
       try {
-        const response = await axios.get('/home/overview'); // Định nghĩa route này trên server
+        const response = await axios.get('https://exam-website-server-api.vercel.app/home/overview'); // Định nghĩa route này trên server
         setProjects(response.data);
       } catch (error) {
         console.error('Có lỗi xảy ra khi lấy thông tin dự án:', error);
