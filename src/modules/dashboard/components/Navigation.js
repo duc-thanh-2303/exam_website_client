@@ -7,7 +7,7 @@ import axios from 'axios'
 const Navigation = () => {
     const handleLogout = async () => {
         try {
-          await axios.post('/logout'); // Gửi yêu cầu logout tới backend
+          await axios.post('https://exam-website-server-api.vercel.app/logout'); // Gửi yêu cầu logout tới backend
           // Chuyển hướng người dùng đến trang đăng nhập
           window.location.href = '/'; // Đổi đường dẫn này nếu đường dẫn của trang login khác
         } catch (error) {
@@ -31,7 +31,7 @@ const Navigation = () => {
         borderRadius: '0.8vw'
     }}>
         <div class="head">
-            <Link to="/dashboard" className='head-logo'>
+            <Link to="https://exam-website-client.vercel.app/dashboard" className='head-logo'>
                 <img src={logo} alt="logo"/>
             </Link>
 
@@ -41,7 +41,7 @@ const Navigation = () => {
                         textDecoration: 'none',
                         color: 'white',
                         fontSize: '1.2vw',
-                    }} to="/dashboard/project">Project</Link>
+                    }} to="https://exam-website-client.vercel.app/dashboard/project">Project</Link>
                 </li>
                 <li>
                     <Link style={{
@@ -55,7 +55,7 @@ const Navigation = () => {
                         textDecoration: 'none',
                         color: 'white',
                         fontSize: '1.2vw',
-                    }} to="/dashboard/report">Report</Link>
+                    }} to="https://exam-website-client.vercel.app/dashboard/report">Report</Link>
                 </li>
             </ul>
         </div>

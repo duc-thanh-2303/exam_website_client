@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const ButtonReport = () => {
     const handleExportExcel = () => {
-        axios.get('/dashboard/report', { responseType: 'blob' })
+        axios.get('https://exam-website-server-api.vercel.app/dashboard/report', { responseType: 'blob' })
           .then(response => {
             const url = window.URL.createObjectURL(new Blob([response.data]));
             const link = document.createElement('a');

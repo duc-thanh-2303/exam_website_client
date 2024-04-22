@@ -8,7 +8,7 @@ const TableProject = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('/dashboard/project');
+        const response = await axios.get('https://exam-website-server-api.vercel.app/dashboard/project');
         setProjects(response.data);
       } catch (error) {
         console.error(error);

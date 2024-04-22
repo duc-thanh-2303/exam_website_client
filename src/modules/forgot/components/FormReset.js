@@ -9,7 +9,7 @@ const FormReset = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      const respone = await axios.post('/reset-password', {email})
+      const respone = await axios.post('https://exam-website-server-api.vercel.app/reset-password', {email})
       setMessage(respone.data)
     } catch (error) {
       console.error(error)

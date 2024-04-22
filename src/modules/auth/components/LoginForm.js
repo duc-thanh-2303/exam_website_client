@@ -8,11 +8,12 @@ function LoginForm({ setLoggedIn }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  
+
+  axios.defaults.withCredentials = true;
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/login', { username, password });
+      const response = await axios.post("https://exam-website-server-api.vercel.app/login", { username, password });
       const token = response.data;
       // Lưu token vào localStorage hoặc sessionStorage
       localStorage.setItem('token', token);
@@ -20,7 +21,7 @@ function LoginForm({ setLoggedIn }) {
       const decodedToken = jwtDecode(token);
       if (decodedToken.role === 'admin') {
         // Chuyển hướng đến trang dashboard nếu là admin
-        window.location.href = '/dashboard';
+        window.location.href = 'https://exam-website-client.vercel.app/dashboard';
       } else {
         // Chuyển hướng đến trang home nếu là user
         window.location.href = '/home';

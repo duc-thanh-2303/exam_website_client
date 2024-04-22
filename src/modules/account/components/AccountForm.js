@@ -24,7 +24,7 @@ const AccountForm = () => {
     e.preventDefault()
 
     try {
-      const response = await axios.post('/dashboard/add-account', formData)
+      const response = await axios.post('https://exam-website-server-api.vercel.app/dashboard/add-account', formData)
       setMessage(response.data)
       setFormData({
         username: '',

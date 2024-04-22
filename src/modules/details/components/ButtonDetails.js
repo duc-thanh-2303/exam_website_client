@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const ButtonDetails = () => {
   return (
     <div>
-        <Link to={`/home/overview/`}>
+        <Link to={`https://exam-website-client.vercel.app/home/overview/`}>
             <button>Next</button>
         </Link>
     </div>

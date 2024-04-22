@@ -11,7 +11,7 @@ const Option = () => {
   return (
     <div className='option'>
       <div className='option__card'>
-        <CardOption status="online" title="BESPOKE - BE HOME" des="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." href="/home" link="Start"/>
+        <CardOption status="online" title="BESPOKE - BE HOME" des="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." href="https://exam-website-server-api.vercel.app/home" link="Start"/>
         <CardOption status="coming" title="COMING SOON" des="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." href="#" link="Start"/>
         <CardOption status="coming" title="COMING SOON" des="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." href="#" link="Start"/>
         <CardOption status="coming" title="COMING SOON" des="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s." href="#" link="Start"/>

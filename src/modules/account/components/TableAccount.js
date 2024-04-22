@@ -8,7 +8,7 @@ const TableAccount = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('/dashboard/account');
+        const response = await axios.get('https://exam-website-server-api.vercel.app/dashboard/account');
         setUsers(response.data);
       } catch (error) {
         console.error(error);

@@ -33,7 +33,7 @@ const FormProject = () => {
     formData.append('video', projectData.video);
 
     try {
-      const res = await axios.post('/dashboard/upload-project', formData, {
+      const res = await axios.post('https://exam-website-server-api.vercel.app/dashboard/upload-project', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
