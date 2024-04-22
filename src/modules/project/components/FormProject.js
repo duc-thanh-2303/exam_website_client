@@ -6,7 +6,7 @@ const FormProject = () => {
     projectName: '',
     author: '',
     summary: '',
-    detailPdf: null,
+    detail: null,
     mainImage: null,
     images: null,
     video: null
@@ -25,7 +25,11 @@ const FormProject = () => {
     formData.append('summary', projectData.summary);
     formData.append('detail', projectData.detail);
     formData.append('mainImage', projectData.mainImage);
-    formData.append('images', projectData.images);
+    if (projectData.images) {
+      for (let i = 0; i < projectData.images.length; i++) {
+        formData.append('images', projectData.images[i]);
+      }
+    }
     formData.append('video', projectData.video);
 
     try {

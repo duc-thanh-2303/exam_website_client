@@ -23,7 +23,7 @@ function LoginForm({ setLoggedIn }) {
         window.location.href = '/dashboard';
       } else {
         // Chuyển hướng đến trang home nếu là user
-        window.location.href = '/option';
+        window.location.href = '/home';
       }
     } catch (error) {
       console.error('Login failed:', error);

@@ -26,7 +26,7 @@ const InforDetails = () => {
 
   return (
     <div>
-      <img src={project.mainImage} alt={project.projectName}/>
+      <img src={`/images/${project.mainImage.split('\\').pop()}`} alt={project.projectName} />
       <h2>NAME: {project.projectName}</h2>
       <p>Author: {project.author}</p>
       <p>Summary: {project.summary}</p>
