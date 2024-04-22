@@ -38,12 +38,9 @@ const CardOverview = () => {
                 <div className='card__overview'  key={project._id}>
                   <div className='overview__image'>
                     {/* {project.mainImage && <img src={project.mainImage} alt={project.projectName} />} */}
-<<<<<<< HEAD
                     {/* {project.mainImage && <img src={`/${project.mainImage}`} alt={project.projectName} />} */}
                     {/* <img src={`${project.mainImage}`} alt={project.projectName} /> */}
                     {/* <img src={`/images/${project.mainImage}`} alt={project.projectName} /> */}
-=======
->>>>>>> c748c83f275c90de9bc348701d35629c83358e89
                     <img src={`/images/${project.mainImage.split('\\').pop()}`} alt={project.projectName} />
                   </div>
                   <span>Point: {project.point}</span>
