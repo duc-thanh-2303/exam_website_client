@@ -40,8 +40,8 @@ const CardOverview = () => {
                     {/* {project.mainImage && <img src={project.mainImage} alt={project.projectName} />} */}
                     {/* {project.mainImage && <img src={`/${project.mainImage}`} alt={project.projectName} />} */}
                     {/* <img src={`${project.mainImage}`} alt={project.projectName} /> */}
-                    {/* <img src={`/images/${project.mainImage}`} alt={project.projectName} /> */}
-                    <img src={`https://exam-website-server-api.vercel.app/images/${project.mainImage.split('\\').pop()}`} alt={project.projectName} />
+                    <img src={`/images/${project.mainImage}`} alt={project.projectName} />
+{/*<img src={`/images/${project.mainImage.split('\\').pop()}`} alt={project.projectName} />*/}
                   </div>
                   <span>Point: {project.point}</span>
                   <h2>{project.projectName}</h2>
