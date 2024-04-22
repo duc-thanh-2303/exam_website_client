@@ -20,6 +20,7 @@ const AccountForm = () => {
     })
   }
 
+  axios.defaults.withCredentials = true;
   const handleSubmit = async(e) => {
     e.preventDefault()
 
